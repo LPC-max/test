@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { getCandidates, getJobs, updateCandidateStage } from '../api.js';
-import StageTag, { STAGE_COLORS } from '../components/StageTag.jsx';
+import StageTag from '../components/StageTag.jsx';
 import StarRating from '../components/StarRating.jsx';
 
 const STAGES = ['Nouveau', 'Présélection', 'Entretien RH', 'Entretien Technique', 'Offre', 'Embauché', 'Refusé'];

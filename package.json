@@ -8,5 +8,13 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:37633/git/LPC-max/test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
