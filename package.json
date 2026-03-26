@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Applicant Tracking System for HR",
   "scripts": {
+    "start": "node backend/server.js",
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
     "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
     "install:all": "cd backend && npm install && cd ../frontend && npm install"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
   },
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "http://local_proxy@127.0.0.1:37633/git/LPC-max/test"

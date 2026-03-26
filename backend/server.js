@@ -1,12 +1,13 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const db = require('./db');
 
 const jobsRouter = require('./routes/jobs');
 const candidatesRouter = require('./routes/candidates');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
@@ -43,6 +44,13 @@ app.get('/api/stats', (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
+
+// Serve frontend in production
+const frontendDist = path.join(__dirname, '../frontend/dist');
+app.use(express.static(frontendDist));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(frontendDist, 'index.html'));
 });
 
 app.listen(PORT, () => {
