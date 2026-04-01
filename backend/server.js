@@ -6,6 +6,7 @@ const db = require('./db');
 const jobsRouter = require('./routes/jobs');
 const candidatesRouter = require('./routes/candidates');
 const hubspotRouter = require('./routes/hubspot');
+const seoRouter = require('./routes/seo');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use('/api/jobs', jobsRouter);
 app.use('/api/candidates', candidatesRouter);
 app.use('/api/hubspot', hubspotRouter);
+app.use('/api/seo', seoRouter);
 
 // Dashboard stats endpoint
 app.get('/api/stats', (req, res) => {
