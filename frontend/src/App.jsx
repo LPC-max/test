@@ -7,6 +7,7 @@ import JobDetail from './pages/JobDetail.jsx';
 import Pipeline from './pages/Pipeline.jsx';
 import Candidates from './pages/Candidates.jsx';
 import HubspotCandidates from './pages/HubspotCandidates.jsx';
+import SEO from './pages/SEO.jsx';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/pipeline" element={<Pipeline />} />
             <Route path="/candidates" element={<Candidates />} />
             <Route path="/hubspot" element={<HubspotCandidates />} />
+            <Route path="/seo" element={<SEO />} />
           </Routes>
         </main>
       </div>

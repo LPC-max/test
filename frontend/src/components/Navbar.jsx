@@ -53,6 +53,16 @@ const navItems = [
         <path d="M12.6 6.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8C17.6 3.9 15.3 3 12.6 3 8.7 3 5.3 5.2 3.7 8.4L7 11c.8-2.3 3-4.1 5.6-4.1z"/>
       </svg>
     )
+  },
+  {
+    to: '/seo',
+    label: 'SEO',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+      </svg>
+    )
   }
 ];
 
